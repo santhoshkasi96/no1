@@ -1,0 +1,247 @@
+header{
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+.global-label{
+	background-color: $primary;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	position: relative;
+    z-index: 99999;
+	a{
+		color: $white;
+		span span{
+			 text-decoration-line: underline;
+			 text-underline-position: under;
+		}
+	}
+}
+
+.global{
+	padding: 2px 10px 3px !important;
+	img{
+		width: 30px;
+		margin-right: 8px;
+	}
+	span{
+		margin-bottom: -3px;
+	}
+}
+.logo{
+	max-width: 120px;
+}
+.header{
+	&-nav{
+		@include align-items(center);
+		&-list{
+			padding-right:77px;
+			&:last-child{
+				padding-right: 0;
+			}
+			a{
+				letter-spacing: 0px;
+				color: initial;
+				&:hover{
+					color: $primary;
+				}
+			}
+		}
+		/*demo start*/
+		.header-sub-nav{
+			display: none;
+			li:last-child{
+				margin-bottom: 0;
+			}
+		}
+		/*demo end*/
+	}
+	&-icon{
+		font-size: 24px;
+		color: $black;
+		li{
+			padding-right:45px;
+			&:last-child{
+				padding-right: 0;
+			}
+		}
+	}
+}
+.user-icon{
+	position: relative;
+	.circle-icon{
+		position: absolute;
+		top: -10px;
+		right: -10px;
+		color: $white;
+		background-color: $primary;
+		font-size: 11px;
+		width: 20px;
+		height: 20px;
+	}
+	&:hover{
+		color: $black;
+	}
+}
+.ham{
+    display: none;
+    cursor: pointer;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: relative;
+    z-index: 99999;
+    @include transition(.5s);
+    &-line{
+        height: 1px;
+        width: 20px;
+        border-radius: 1px;
+        background: $black;
+        position: relative;
+        @include transition(.5s); 
+        &:before,&:after{
+            content:'';
+            display: block;
+            height: 1px;
+            position: absolute;
+            left: 0;
+            width: 20px;
+            background: $black;
+            @include transition(.5s);
+            border-radius: 1px;
+        }
+        &:before{
+            top: -5px;
+        }
+        &:after{
+            bottom: -5px;
+        }
+    }
+    &.close-menu{
+        @include transition(.5s);
+        .ham-line{
+            @include transition(.1s); 
+            background: transparent;
+            &:before,&:after{
+                @include transition(.5s);
+            }
+            &:before{
+                top: -4px;
+                transform: rotate(45deg);
+            }
+            &:after{
+                bottom: 4px;
+                transform: rotate(-45deg);
+            }    
+        }
+    }
+}
+.world{
+	animation: linear 2s infinite example;
+	display: block;
+}
+
+ 
+@keyframes example {
+	0%{
+  	@include transform(scale(1));
+
+  }
+  50%{
+  	@include transform(scale(1.1));
+  }
+ 100%{
+  	@include transform(scale(1));
+  }
+}
+body.flow{
+	overflow-y: hidden;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+@media screen and (max-width: 1200px) {
+	.header-nav-list,.header-icon li{
+		padding-right: 30px;
+	}
+}
+@media screen and (max-width: 1024px) {
+	.header{
+		&-nav{
+			@include align-items(start);
+			padding-top: 170px; /*110px*/
+			position: fixed;
+		    background-color: $background ;
+		    left: 100%;
+		    top: 0;
+		    bottom: 0;
+		    right: 0;
+		    z-index: 9999;
+		    overflow: auto;
+		    flex-direction: column;
+		    transition: 0.5s;
+		    &.active{
+				left: 0;
+				@include transition(.5s);
+				li{
+					opacity: 1;
+					@include transition(0.5s 0.3s);
+				}
+			}
+			li{
+				padding: 0 28px !important;
+				margin: 20px 0;
+				opacity: 0;
+			}
+			/*demo start*/ 
+			&-drop-down{
+				position: relative;
+				&:after{
+		            content: "\F110";
+		            color: $primary;
+		            font-family: Lineawesome;
+		            font-weight: 700;
+		            font-size: 10px;
+		            line-height: 0;
+		            position: absolute;
+		            top: 14px;
+		            right:28px;
+		            @include transform(translate-Y(-50%));
+		            @include transition(all .25s ease-in-out);
+		        }
+				&.active{
+					&:after{
+		                @include transform(rotate(-180deg));
+		                @include transition(.5s);
+		            }
+				}
+			}
+			/*demo end*/
+		}
+		&-icon{
+			font-size: 20px;
+			li:last-child{
+				padding-right:30px;
+			}
+		}
+	}
+	.ham{
+		display: block;
+	}
+}
+@media screen and (max-width: 768px) {
+	header{
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+	.logo{
+		max-width: 75px;
+	}
+	/*.header-icon{
+		li{
+			padding-right: 8px;
+			&:last-child{
+				padding-right: 8px;
+			}
+		}
+	} */
+}

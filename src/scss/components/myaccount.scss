@@ -1,0 +1,116 @@
+/*.add-adrs-btn{
+	.minus{
+		display: none;
+	}
+	&.active{
+		.add{
+			display: none;
+		}
+		.minus{
+			display: block;
+		}	
+	}
+}*/
+
+.dropdown-blk{
+	max-width: 400px; /*500px*/
+	min-width: 260px;
+}
+.dropdown-btn{
+	display: none;
+}
+.with-dropdown{
+	background-color: $background;
+	/*border-radius: 5px;*/
+	ul{
+		/*box-shadow: inset 0px 0px 16px 0px #47494d00, inset 0px 3px 28px 0px #5e5a5a29;*/
+		padding-bottom: 0;
+		li{
+			font-size: 16px;
+			line-height: 24px;
+			@include transition (all 0.5s);
+			&.active{
+				background-color: $light-ash1; /*#1f202026*/
+				a{
+					color: $primary;
+				}
+			}
+			a{
+				padding: 15px 20px;
+				font-family: $mfont;
+				color: $black;
+				display: block;
+			}
+		}
+	}
+}
+
+
+/*pagination start*/
+  .pagination-blk{
+    background-color: $background;
+    padding:5px 24px;
+    border-radius: 4px;
+    h6{
+      font-weight: 400;
+    }
+    .pagination-arrows{
+      display:flex;
+      .arrow{
+        width: 48px;
+        height: 48px;
+        border-radius: 48px;
+        color: $secondary;
+        @include display-flex;
+        @include justify-content(center);
+        @include align-items(center);
+        @include transition(all 0.3s linear);
+        font-weight: bold;
+        cursor: default;
+        &.active{
+          color: $primary;
+          cursor: pointer;
+          &:hover{
+            background-color: $light-ash1;
+          }
+        }
+      }
+    }
+  }
+/*pagination end*/
+
+@media screen and (min-width: 991px) { /*1200*/
+
+	.dropdown-blk{
+		position: sticky;
+		top: 10px;
+	}
+
+}
+@media screen and (max-width: 990px) { /*1199*/
+	.dropdown-con{
+		/*display: none;*/
+		 margin-top: 16px;
+	}
+	.dropdown-btn{
+		padding:15px 20px;
+	    display: block;
+	    background: $background;
+	    position: relative;
+	    /*box-shadow: inset 0px 0px 16px 0px #47494d00, inset 0px 3px 28px 0px #5e5a5a29;*/
+	    &:after{
+	    	position: absolute;
+	    	right: 20px;
+	    	content: "\F110";
+	    	font-family: "Lineawesome";
+	    	font-weight: 500;
+	    	@include transition(rotate 0.5s);
+	    	@include transform(rotate(0deg));
+	    }
+	    &.active{
+	    	&:after{
+	    		@include transform(rotate(180deg));
+	    	}
+	    }
+	}
+}

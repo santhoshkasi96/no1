@@ -1,0 +1,111 @@
+/* Basic setup */
+
+
+@font-face {
+   font-family: 'Fontawesome';
+   src: url('#{$relative-path}/fonts/fontawesome-webfont.eot');
+   src: url('#{$relative-path}/fonts/fontawesome-webfont.eot') format('embedded-opentype'),
+        url('#{$relative-path}/fonts/fontawesome-webfont.woff2') format('woff2'),
+        url('#{$relative-path}/fonts/fontawesome-webfont.woff') format('woff'),
+        url('#{$relative-path}/fonts/fontawesome-webfont.ttf') format('truetype'),
+        url('#{$relative-path}/fonts/fontawesome-webfont.svg#fontawesome-webfont') format('svg');
+}
+@font-face {
+   font-family: 'Lineawesome';
+   src: url('#{$relative-path}/fonts/line-awesome.eot');
+   src: url('#{$relative-path}/fonts/line-awesome.eot') format('embedded-opentype'),
+        url('#{$relative-path}/fonts/line-awesome.woff2') format('woff2'),
+        url('#{$relative-path}/fonts/line-awesome.woff') format('woff'),
+        url('#{$relative-path}/fonts/line-awesome.ttf') format('truetype'),
+        url('#{$relative-path}/fonts/line-awesome.svg#line-awesome') format('svg');
+}
+@font-face {
+   font-family: 'Montserrat-Black';
+   src: url('#{$relative-path}/fonts/Montserrat-Black.eot');
+   src: url('#{$relative-path}/fonts/Montserrat-Black.eot') format('embedded-opentype'),
+        url('#{$relative-path}/fonts/Montserrat-Black.woff2') format('woff2'),
+        url('#{$relative-path}/fonts/Montserrat-Black.woff') format('woff'),
+        url('#{$relative-path}/fonts/Montserrat-Black.ttf') format('truetype'),
+        url('#{$relative-path}/fonts/Montserrat-Black.svg#Montserrat-Black') format('svg');
+}
+@font-face {
+   font-family: 'Montserrat-Light';
+   src: url('#{$relative-path}/fonts/Montserrat-Light.eot');
+   src: url('#{$relative-path}/fonts/Montserrat-Light.eot') format('embedded-opentype'),
+        url('#{$relative-path}/fonts/Montserrat-Light.woff2') format('woff2'),
+        url('#{$relative-path}/fonts/Montserrat-Light.woff') format('woff'),
+        url('#{$relative-path}/fonts/Montserrat-Light.ttf') format('truetype'),
+        url('#{$relative-path}/fonts/Montserrat-Light.svg#Montserrat-Light') format('svg');
+}
+@font-face {
+   font-family: 'Montserrat-Bold';
+   src: url('#{$relative-path}/fonts/Montserrat-Bold.eot');
+   src: url('#{$relative-path}/fonts/Montserrat-Bold.eot') format('embedded-opentype'),
+        url('#{$relative-path}/fonts/Montserrat-Bold.woff2') format('woff2'),
+        url('#{$relative-path}/fonts/Montserrat-Bold.woff') format('woff'),
+        url('#{$relative-path}/fonts/Montserrat-Bold.ttf') format('truetype'),
+        url('#{$relative-path}/fonts/Montserrat-Bold.svg#Montserrat-Bold') format('svg');
+}
+@font-face {
+   font-family: 'Montserrat-Medium';
+   src: url('#{$relative-path}/fonts/Montserrat-Medium.eot');
+   src: url('#{$relative-path}/fonts/Montserrat-Medium.eot') format('embedded-opentype'),
+        url('#{$relative-path}/fonts/Montserrat-Medium.woff2') format('woff2'),
+        url('#{$relative-path}/fonts/Montserrat-Medium.woff') format('woff'),
+        url('#{$relative-path}/fonts/Montserrat-Medium.ttf') format('truetype'),
+        url('#{$relative-path}/fonts/Montserrat-Medium.svg#Montserrat-Medium') format('svg');
+}
+@font-face {
+   font-family: 'Montserrat-Regular';
+   src: url('#{$relative-path}/fonts/Montserrat-Regular.eot');
+   src: url('#{$relative-path}/fonts/Montserrat-Regular.eot') format('embedded-opentype'),
+        url('#{$relative-path}/fonts/Montserrat-Regular.woff2') format('woff2'),
+        url('#{$relative-path}/fonts/Montserrat-Regular.woff') format('woff'),
+        url('#{$relative-path}/fonts/Montserrat-Regular.ttf') format('truetype'),
+        url('#{$relative-path}/fonts/Montserrat-Regular.svg#Montserrat-Regular') format('svg');
+}
+@font-face {
+   font-family: 'Montserrat-SemiBold';
+   src: url('#{$relative-path}/fonts/Montserrat-SemiBold.eot');
+   src: url('#{$relative-path}/fonts/Montserrat-SemiBold.eot') format('embedded-opentype'),
+        url('#{$relative-path}/fonts/Montserrat-SemiBold.woff2') format('woff2'),
+        url('#{$relative-path}/fonts/Montserrat-SemiBold.woff') format('woff'),
+        url('#{$relative-path}/fonts/Montserrat-SemiBold.ttf') format('truetype'),
+        url('#{$relative-path}/fonts/Montserrat-SemiBold.svg#Montserrat-SemiBold') format('svg');
+}
+@font-face {
+   font-family: 'Montserrat-LightItalic';
+   src: url('#{$relative-path}/fonts/Montserrat-LightItalic.eot');
+   src: url('#{$relative-path}/fonts/Montserrat-LightItalic.eot') format('embedded-opentype'),
+        url('#{$relative-path}/fonts/Montserrat-LightItalic.woff2') format('woff2'),
+        url('#{$relative-path}/fonts/Montserrat-LightItalic.woff') format('woff'),
+        url('#{$relative-path}/fonts/Montserrat-LightItalic.ttf') format('truetype'),
+        url('#{$relative-path}/fonts/Montserrat-LightItalic.svg#Montserrat-LightItalic') format('svg');
+}
+@font-face {
+   font-family: 'opensans-Bold';
+   src: url('#{$relative-path}/fonts/opensans-Bold.eot');
+   src: url('#{$relative-path}/fonts/opensans-Bold.eot') format('embedded-opentype'),
+        url('#{$relative-path}/fonts/opensans-Bold.woff2') format('woff2'),
+        url('#{$relative-path}/fonts/opensans-Bold.woff') format('woff'),
+        url('#{$relative-path}/fonts/opensans-Bold.ttf') format('truetype'),
+        url('#{$relative-path}/fonts/opensans-Bold.svg#opensans-Bold') format('svg');
+}
+@font-face {
+   font-family: 'opensans-SemiBold';
+   src: url('#{$relative-path}/fonts/opensans-SemiBold.eot');
+   src: url('#{$relative-path}/fonts/opensans-SemiBold.eot') format('embedded-opentype'),
+        url('#{$relative-path}/fonts/opensans-SemiBold.woff2') format('woff2'),
+        url('#{$relative-path}/fonts/opensans-SemiBold.woff') format('woff'),
+        url('#{$relative-path}/fonts/opensans-SemiBold.ttf') format('truetype'),
+        url('#{$relative-path}/fonts/opensans-SemiBold.svg#opensans-SemiBold') format('svg');
+}
+@font-face {
+   font-family: 'opensans-extrabold';
+   src: url('#{$relative-path}/fonts/opensans-extrabold.eot');
+   src: url('#{$relative-path}/fonts/opensans-extrabold.eot') format('embedded-opentype'),
+        url('#{$relative-path}/fonts/opensans-extrabold.woff2') format('woff2'),
+        url('#{$relative-path}/fonts/opensans-extrabold.woff') format('woff'),
+        url('#{$relative-path}/fonts/opensans-extrabold.ttf') format('truetype'),
+        url('#{$relative-path}/fonts/opensans-extrabold.svg#opensans-extrabold') format('svg');
+}

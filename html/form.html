@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="user-scalable=no,initial-scale=1,maximum-scale=1.0" />
+	<!-- <link rel="shortcut icon"href="img/nl-favicon.png"/> -->
+	<title>SSP</title>
+	<!-- modernizr included -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+	<style>
+		body{
+			background-color: #fff;
+		}  
+		.render-blk{ opacity:0; }
+	</style>
+	<script>
+		var cssArr = ['css/app.css'];
+		for(var i = 0; i < cssArr.length; i++) {
+			var link = document.createElement('link');
+			link.setAttribute('rel', 'stylesheet');
+			link.setAttribute('type', 'text/css');
+			link.setAttribute('href', cssArr[i]);
+			document.getElementsByTagName('head')[0].appendChild(link);
+		}
+	</script>
+	<noscript>
+		<style media="screen">
+			.render-blk{ opacity: 1; }	
+		</style>
+	</noscript>
+</head>
+	<body class="generic">
+		<div class="render-blk">
+			<!-- fixed label start -->
+			<div class="global-label only-mob">
+				<div class="container">
+					<a href="javascript:void(0);" class="d-flex align-items-center justify-content-center"><img src="images/global2.svg">
+						<span class="ml-2 mb-n2 ld">Global Indians <span>Shop Here</span>.</span>
+					</a>
+				</div>
+			</div>
+			<!-- fixed label end -->
+			<!-- header start -->
+			<header>
+				<div class="container">
+					<div class="d-flex justify-content-between align-items-center">
+						<a href="./index.html" class="logo">
+							<img src="images/logo.png">
+						</a>
+						<ul class="header-nav d-flex">
+							<li class="header-nav-list"><a href="./about1.html" class="link-anim">About</a></li>
+							<li class="header-nav-list"><a href="./subpage.html" class="link-anim">Home Use</a></li>
+							<li class="header-nav-list"><a href="./subpage-f2.html" class="link-anim">Industrial Use</a></li>
+							<!-- <li class="header-nav-list"><a href="javascript:void(0)" class="link-anim">Global</a></li> -->
+							<li class="header-nav-list"><a href="./form.html" class="link-anim">Contact</a></li>
+						</ul>
+						<div class="only-desk">
+							<a href="javascript:void(0);" class="button sm-btn v1 d-flex align-items-center global"><img src="images/global2.svg">
+								<span class="md">Global Indians Shop Here</span>
+							</a>
+						</div>
+						<div class="d-flex align-items-center">
+							<ul class="header-icon d-flex">
+								<li><a href="./myaccount-1.html" class="user-icon"><i class="fa fa-user" aria-hidden="true"></i></a></li>
+								<li>
+									<a href="./cart-2.html" class="user-icon">
+										<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+										<span class="circle-icon type2">3</span>
+									</a>
+								</li>
+							</ul>
+							<div class="ham"><div class="ham-line"></div></div>
+						</div>
+					</div>
+				</div>	
+			</header>
+			<!-- header end -->
+			<!-- form start -->
+			<div class="container">
+				<div class="mid-container mx-auto mb-5">
+					<div >
+						<div class="row justify-content-center">
+							<div class="col-lg-6 mb-50">
+								<!-- <div class="small-container"> -->
+									<div class="mb-40">
+										<h3>Contact Us</h3>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae egestas mi, vel dapibus diam. Mauris malesuada, nisl non rutrum commodo, sem magna beatae vitae dicta sunt explicabo.</p>
+									</div>
+									<!-- <div class="alert-msg mb-40">  
+					                    <p>Oh no!! We couldn’t find your account. Check your details and retry.</p>
+					                </div> -->
+									<form>
+										<div class="floating-blk">
+						                  <label for="name" class="floating-row">
+						                    <span class="floating-label">First Name</span>
+						                    <input class="floating-input" type="text" id="name" />
+						                    <p class="floating-input-error">Error message</p>
+						                  </label>
+						                </div>
+						                <div class="floating-blk">
+						                  <label for="name1" class="floating-row">
+						                    <span class="floating-label">Last Name</span>
+						                    <input class="floating-input" type="text" id="name1" />
+						                  </label>
+						                </div>
+						                <div class="floating-blk">
+						                  <label for="name2" class="floating-row">
+						                    <span class="floating-label">Email</span>
+						                    <input class="floating-input" type="Email" id="name2" />
+						                  </label>
+						                </div>
+						                <div class="floating-blk">
+						                  <label for="name3" class="floating-row">
+						                    <span class="floating-label">Phone Number</span>
+						                    <input class="floating-input" type="number" id="name3" />
+						                  </label>
+						                </div>
+						                <div class="floating-blk">
+							                <label for="select2" class="floating-row">
+							                    <span class="arrow-btn"><i class="las la-angle-down"></i></span>
+							                    <span class="floating-label">Place</span>
+							                    <select id="select2" class="floating-input">
+							                      <option value="" hidden></option>
+							                      <option>250 gms</option>
+							                      <option>500 gms</option>
+							                      <option>750 gms</option>
+							                      <option>1000 gms</option>
+							                    </select>
+							                </label>
+						                </div>
+						                <div class="floating-blk">
+						                  <label for="name3" class="floating-row">
+						                    <span class="floating-label">Message</span>
+						                    <textarea class="floating-input" type="" name="message" id="message" rows = "6" ></textarea>
+						                  </label>
+						                </div>
+						                <ul>
+											<li>
+												<div class="checkbox-animate regular mb-4">
+													<label>
+														<input type="checkbox" name="" value="checkbox">
+														<span class="tick-anim"></span>
+														<p>By registering, you agree to the &nbsp<a href="javascript:void(0);" class="link-anim">terms and conditions</a>.</p>
+													</label>
+													<p class="floating-input-error">Error message</p>
+												</div>
+											</li>
+											<li>
+												<div class="checkbox-animate regular mb-4">
+													<label>
+														<input type="checkbox" name="" value="checkbox">
+														<span class="tick-anim"></span>
+														<p>I would like to option in to receive your marketing communications.</p>
+													</label>
+												</div>
+											</li>
+										<ul>
+									</form>
+									<a href="javascript:void(0);" class="button mb mt-2">Submit</a>
+								<!-- </div> -->
+							</div>
+							<div class="col-lg-6"> 
+								<div class="cart-blk contact  mx-auto ld pb-5">
+									<h5 class="v1 mb-3">Registered Office</h5>
+									<p><strong>International shipment available for select products.</strong></p>
+									<p>S S Pandian & Sons</p>
+									<p>#148, 3rd Main Road,</p>
+									<p>Industrial Town,</p>
+									<p>Rajajinagar,</p>
+									<p>Bengaluru – 560 010</p>
+									<p>India.</p>
+									<p><strong>Tel:</strong>  2330 0127 / 2330 6305</p>
+									<p><strong>Fax:</strong> 2338 3038</p>
+									<p><strong>Mobile:</strong> +91 99004 55100</p>
+									<p><strong>Working hours</strong> 9.30pm – 5.30pm</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- form end -->
+			<!-- footer start -->
+				<footer class="py-80">
+					<div class="container">
+							<div class="row mb-150">
+								<div class="col-12 col-md-6">
+									<div class="row mb-40 mb-md-0">
+										<div class="col-6 mb-3 mb-md-0">
+											<ul class="footer-lists">
+												<li><a href="javascript:void(0);" class="link-anim">About</a></li>
+												<li><a href="javascript:void(0);" class="link-anim">Home Use</a></li>
+												<li><a href="javascript:void(0);" class="link-anim">Hotel Use</a></li>
+												<li><a href="javascript:void(0);" class="link-anim">International</a></li>
+												<li><a href="javascript:void(0);" class="link-anim">Recipe</a></li>
+												<li><a href="javascript:void(0);" class="link-anim">Health Benefits</a></li>
+											</ul>
+										</div>
+										<div class="col-6 mb-3 mb-md-0">     
+											<ul class="footer-lists">
+												<li><a href="javascript:void(0);" class="link-anim">Contact</a></li>
+												<li><a href="javascript:void(0);" class="link-anim">FAQs</a></li>
+												<li><a href="javascript:void(0);" class="link-anim">Returns Policy</a></li>
+												<li><a href="javascript:void(0);" class="link-anim">Cookie Policy</a></li>
+												<li><a href="javascript:void(0);" class="link-anim">Privacy Policy</a></li>
+												<li><a href="javascript:void(0);" class="link-anim">Terms and Conditions</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 col-xl-5 offset-xl-1">
+									<form class="w-100">
+						              	<div class="search-blk">
+							                <input class="search-box w-100" type="text" id="name" placeholder="Subscribe to our newsletter" />
+							                <a href="javascript:void(0);" class="search-btn button">Subscribe</a>
+						              	</div>
+						              	<div class="err-msg">
+							            	<p>Lorem Ipsum Error message.</p>
+						               	</div>
+						            </form>
+								</div>
+							</div>
+							<div class=" footer-bottom d-md-flex align-items-center justify-content-between text-center text-md-left ">
+								<p>© 2019-23 SS Pandian & Sons. All rights reserved / Powered by <a href="javascript:void(0);" class="link-anim primary">Made By Fire</a></p>
+								<ul class="social-icons d-flex justify-content-center py-4 py-lg-0">
+									<li ><a href="javascript:void(0);"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+									<li><a href="javascript:void(0);"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</footer>
+			<!-- footer end -->
+			
+		</div>	
+	  	<script>
+		  	var jsArr = ['js/app.js'];
+			for(var j = 0; j < jsArr.length; j++) {
+		        var script = document.createElement('script')
+		        script.setAttribute('type', 'text/javascript')
+		        script.setAttribute('src', jsArr[j])
+		        document.getElementsByTagName('head')[0].appendChild(script)
+		    }
+	    </script>
+	</body>
+</html>

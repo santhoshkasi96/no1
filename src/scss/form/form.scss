@@ -1,0 +1,270 @@
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus{
+    -webkit-box-shadow: 0 0 0 32px $white inset !important;
+	-webkit-text-fill-color: $black !important;
+	-webkit-text-stroke-color: $black;
+    transition: 0s !important;
+}
+.adrs-form{
+   input:-webkit-autofill,
+    input:-webkit-autofill:hover, 
+    input:-webkit-autofill:focus, 
+    input:-webkit-autofill:active,
+    textarea:-webkit-autofill,
+    textarea:-webkit-autofill:hover,
+    textarea:-webkit-autofill:focus,
+    select:-webkit-autofill,
+    select:-webkit-autofill:hover,
+    select:-webkit-autofill:focus{
+        -webkit-box-shadow: 0 0 0 100px $background inset !important;
+    }
+    
+}
+input{
+    transition: 0s;
+}
+::placeholder {
+  color: $primary;
+  opacity: 1;
+}
+
+:-ms-input-placeholder { 
+ color: $primary;
+}
+
+::-ms-input-placeholder {
+ color: $primary;
+}
+
+select{
+    cursor: pointer;
+}
+.search{
+    &-blk{
+        position: relative;
+        &.err{
+            animation: shake 0.2s;
+        } 
+        &.voucher-code{
+            max-width: 500px; /*new 2.0*/
+            .search-box {
+                border-radius: 5px;
+                padding: 12px;
+                font-size: 14px; /*16px*/
+            }
+            .search-btn{
+                border-radius: 0 5px 5px 0;
+                padding: 12px;
+                line-height: 18px;
+                font-size: 14px; /*16px*/
+            }
+           
+        }
+
+    }
+    &-box{
+        background-color: $white;
+        /*height: 56px;*/
+        padding: 18px 20px;
+        outline: none;
+        color: $black;  /*$primary*/
+        font-size: 16px;
+        line-height: 19px;
+        font-family: $mfont;
+        border: 0;
+        /*padding-right: 139px;*/
+        padding-right: 30%;
+    }
+    &-btn{
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        padding:12px 20px;
+        font-family: $mfont;
+        border-radius: 0;
+        font-size: 16px;
+        line-height: 30px;
+    }
+}
+.success-msg{
+    background-color: $white;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 5px;
+    display: block;
+    line-height: 19px;
+    font-family: $mfont;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    @include transition(all 0.5s);
+    opacity: 0;
+    &.active{
+        z-index: 1;
+        opacity: 1;
+    }
+}
+.err-msg,.s-msg{
+    margin-top: 10px;
+    font-size: 15px;
+    font-family: $mfont;
+    padding: 5px 10px !important;
+    background-color: $primary;
+    color: $white;
+    border-radius: 4px;
+    display: none;
+    opacity: 0;
+    @include transition(opacity 0.5s);
+    p{
+        padding-bottom: 0;
+    }
+    &.active{
+        display: block;
+        opacity: 1;
+    }
+}
+.s-msg{
+    background-color: $green;
+}
+.other-form-field{
+    display: none;
+}
+
+/*floating start*/
+.floating{
+    &-blk.v1{
+        position: relative;
+        .arrow-btn{
+            position: absolute;
+            right: 0;
+            color: $primary;
+            font-weight: 600;
+            font-size: 12px;
+        }
+        select{
+            border: 0;
+            padding-right: 22px;
+            background-color: transparent;
+        }
+    } 
+}
+.err{
+    /*color: $primary;*/
+    .floating-input{
+        border-color: $primary;
+    }
+    .floating-label,.floating-input{
+        color: $primary !important;
+    }
+    .floating-input-error{
+        display: block;
+    }
+}
+.floating{
+    &-blk{
+        margin-bottom: 30px;
+        &.active{
+            .floating-label{
+                top: 0;
+                font-size: 12px;
+                line-height: 13.2px;
+                z-index: 1;
+            }
+        }
+    }
+    &-row{
+        position: relative;
+        width: 100%;
+        .arrow-btn{
+            position: absolute;
+            right: 0;
+            top: 50%;
+            @include transform(translateY(-50%));
+            color: $primary;
+        }
+    }
+    &-label{
+        position: absolute;
+        left: 0;
+        top: 13px;
+        color: $black;
+        transition: all 0.3s;
+        /*z-index: -1;*/
+        width: 100%; /*before added*/
+    }
+    &-input{
+        position: relative;
+        background-color: transparent !important;
+        color: $black;
+        border: 0;
+        border-bottom: 1px solid $border;
+        padding: 13px 0 ;
+        display: block;
+        width: 100%;
+        font-family: $mfont;
+        border-radius: 0;
+        &-error{
+            display: none;
+            padding: 4px 15px !important;
+            border-radius: 5px;
+            margin-top: 5px;
+            color :$white;
+            background-color: $primary;
+        }
+    }
+}
+/*floating end*/
+
+@keyframes shake {
+    0%{
+        @include transform(translateX(-2px));
+    }
+    25%{
+        @include transform(translateX(0px));
+    }
+    50%{
+         @include transform(translateX(2px));
+    }
+    75%{
+         @include transform(translateX(0px));
+    }
+    90%{
+         @include transform(translateX(2px));
+    }
+    100%{
+         @include transform(translateX(0px));
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .search{
+        &-box{
+            font-size: 12px;
+            /*padding-right: 98px;*/
+            padding-right: 33%;
+        }
+        &-btn{
+            font-size: 12px;
+        }
+    }
+    .err-msg,.s-msg{
+        font-size: 12px;
+    }
+}
+
+
+
+
+
+

@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="user-scalable=no,initial-scale=1,maximum-scale=1.0" />
+	<!-- <link rel="shortcut icon"href="img/nl-favicon.png"/> -->
+	<title>SSP</title>
+	<!-- modernizr included -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+	<style>
+		body{
+			background-color: #fff;
+		}  
+		.render-blk{ opacity:0; }
+	</style>
+	<script>
+		var cssArr = ['css/app.css'];
+		for(var i = 0; i < cssArr.length; i++) {
+			var link = document.createElement('link');
+			link.setAttribute('rel', 'stylesheet');
+			link.setAttribute('type', 'text/css');
+			link.setAttribute('href', cssArr[i]);
+			document.getElementsByTagName('head')[0].appendChild(link);
+		}
+	</script>
+	<noscript>
+		<style media="screen">
+			.render-blk{ opacity: 1; }	
+		</style>
+	</noscript>
+</head>
+	<body class="generic">
+		<div class="render-blk">
+			<!-- fixed label start -->
+			<div class="global-label only-mob">
+				<div class="container">
+					<a href="javascript:void(0);" class="d-flex align-items-center justify-content-center"><img src="images/global2.svg">
+						<span class="ml-2 mb-n2 ld">Global Indians <span>Shop Here</span>.</span>
+					</a>
+				</div>
+			</div>
+			<!-- fixed label end -->
+			<!-- header start -->
+			<header>
+				<div class="container">
+					<div class="d-flex justify-content-between align-items-center">
+						<a href="./index.html" class="logo">
+							<img src="images/logo.png">
+						</a>
+						<ul class="header-nav d-flex">
+							<li class="header-nav-list"><a href="./about1.html" class="link-anim">About</a></li>
+							<li class="header-nav-list"><a href="./subpage.html" class="link-anim">Home Use</a></li>
+							<li class="header-nav-list"><a href="./subpage-f2.html" class="link-anim">Industrial Use</a></li>
+							<li class="header-nav-list"><a href="./form.html" class="link-anim">Contact</a></li>
+						</ul>
+						<div class="only-desk">
+							<a href="javascript:void(0);" class="button sm-btn v1 d-flex align-items-center global"><img src="images/global2.svg">
+								<span class="md">Global Indians Shop Here</span>
+							</a>
+						</div>
+						<div class="d-flex align-items-center">
+							<ul class="header-icon d-flex">
+								<li><a href="./myaccount-1.html" class="user-icon"><i class="fa fa-user" aria-hidden="true"></i></a></li>
+								<li>
+									<a href="./cart-2.html" class="user-icon">
+										<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+										<span class="circle-icon type2">3</span>
+									</a>
+								</li>
+							</ul>
+							<div class="ham"><div class="ham-line"></div></div>
+						</div>
+					</div>
+				</div>	
+			</header>
+			<!-- header end -->
+			<div class="container">
+				<div class="mid-container">
+					<div class="row mb-60">
+						<div class="col-xl-8">
+							<div>
+								<div class="mb-20">
+									<a href="javascript:void(0);">303 Asafoetida</a> /
+								</div>
+								<div class="mb-30">
+									<h3>Checkout</h3>
+									<p>Push yourself and put the pedal to the metal by joining our challenges. Join on your own or get a group together.</p>
+								</div>
+								<!-- mob-cart start -->
+								<div class="full-width">
+									<div style="background-color:#F8F2F2; margin-bottom: 40px;">
+										<div class="container">
+											<div class="accord d-block d-xl-none">
+												<div>
+													<a href="javascript:void(0);" class="toggle_btn active"><p><span class="mr-2"><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>Order summary</p></a>
+													<div class="inner pt-3">
+														<div>
+															<div class="mb-50">
+																<div class="d-flex justify-xl-content-between ">
+																	<a href="#" class="product-thum mb-3" style="background-color:#fff"><img src="images/123.png" alt="images"></a>
+																	<div>
+																		<div>
+																			<span class="md mb-2">303 Compounded Asofoetida</span>
+																			<span class="md mb-1">Rs. 3,000</span>
+																			<span class="sm mb-3 d-inline-block">(250 gms)</span>
+																			<div class="count">
+																				<span class="minus box">-</span>
+																				<input class="box" type="text" name="" value="1" readonly>
+																				<span class="plus box active">+</span>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<form>
+																<div class="position-relative mb-40">
+																	<div class="search-blk voucher-code">
+														                <input class="search-box w-100" type="text" id="name" placeholder="Voucher Code">
+														                <a href="javascript:void(0);" class="search-btn button">Apply</a>
+													              	</div>
+													              	<div class="success-msg d-flex align-items-center justify-content-between">
+													              		<div>
+														              		<span class="lg b-font">#33GewW</span>
+														            		<span class="md m-font mt-1 green">Offer applied on the bill</span>
+													              		</div>
+													              		<a href="javascript:void(0);" class="link-anim md code-remove">Remove</a>
+													              	</div>
+																</div>
+															</form>
+															<table class="cart-table v1 with-check mb-30">
+																<tbody>
+																	<tr>
+																		<td>
+																			<span class="md">Price</span>
+																		</td>
+																		<td>
+																			<span class="md">Rs. 3,000</span>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td>
+																			<span class="md">Shipping</span>
+																		</td>
+																		<td>
+																			<span class="md">Free!</span>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td>
+																			<span class="md">Discount</span>
+																		</td>
+																		<td>
+																			<span class="md">-0</span>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td>
+																			<span class="b-font md">Total</span>
+																		</td>
+																		<td>
+																			<span class="b-font md">Rs. 3,000</span>
+																		</td>
+																	</tr>
+																</tbody>
+															</table>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!--  mob cart end -->
+
+								<!-- accord start -->
+								<div class="accord-new">
+									<div class="accord-blk active">
+										<div class="accord-btn">
+											<h5 class="mb-0 v1">Mobile</h5>
+											<div class="after">
+												<p>8056759494</p>
+											</div>
+										</div>
+										
+										<div class="accord-content active">
+											<form>
+								                <div class="floating-blk">
+								                  <label for="name2" class="floating-row">
+								                    <span class="floating-label">Enter the mobile number</span>
+								                    <input class="floating-input" type="tel" id="name2" />
+								                  </label>
+								                </div>
+											</form>
+											<a href="javascript:void(0);" class="button mb tb nxt-btn">Login with OTP</a>
+											<span class="md">If you’re ordering from outside India, please click <a href="javascript:void(0);" class="link-anim">here</a>.</span>
+										</div>
+									</div>
+									<div class="accord-blk">
+										<div class="accord-btn">
+											<div class="d-flex justify-content-between align-items-center">
+												<h5 class="mb-0 v1">Contact Details</h5>
+												<div class="after">
+													<a href="javascript:void(0);" class="button sm-btn v1 mb change-btn">Change</a>
+												</div>
+											</div>
+											<div class="after">
+												<h6>Home</h6>
+												<span class="ld">Akshya Nagar 1st Block 1st Cross,</span>
+												<span class="ld">Rammurthy nagar,</span>
+												<span class="ld">Bangalore-560016.</span>
+											</div>
+										</div>
+										<div class="accord-content">
+											<form>
+								                <div class="floating-blk">
+								                  <label for="name2" class="floating-row">
+								                    <span class="floating-label">Name</span>
+								                    <input class="floating-input" type="text" id="name2" />
+								                  </label>
+								                </div>
+								                <div class="floating-blk">
+								                  <label for="name2" class="floating-row">
+								                    <span class="floating-label">Email</span>
+								                    <input class="floating-input" type="Email" id="name2" />
+								                  </label>
+								                </div>
+											</form>
+											<div class="pb-2"></div>
+											<h6>Choose Your Address</h6>
+											<!-- <div class="mb-20"></div> -->
+											<div class="row address-section mt-n3">
+												<div class="col-md-6">
+													<div class="with-card">
+														<div class="normal-cards">
+															<div>
+																<div class="d-flex justify-content-between">
+																	<h6>Home</h6>
+																	<div>
+																		<a href="javascript:void(0)" title="Edit" class="circle-icon type2 mr-1" style="width: 24px; height: 24px; font-size: 14px;"><i class="las la-pencil"></i></a>
+																	</div>
+																</div>
+																<div class="ash-color">
+																	<span class="ld">Akshya Nagar 1st Block 1st Cross,</span>
+																	<span class="ld">Rammurthy nagar,</span>
+																	<span class="ld">Bangalore-560016.</span>
+																</div>
+																<a href="javascript:void(0);" class="button sm-btn mt-3 nxt-btn v1">Deliver Here</a>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="col-md-6">
+													<div class="with-card">
+														<div class="normal-cards">
+															<div>
+																<div class="d-flex justify-content-between">
+																	<h6>Home</h6>
+																	<div>
+																		<a href="javascript:void(0)" title="Edit" class="circle-icon type2 mr-1" style="width: 24px; height: 24px; font-size: 14px;"><i class="las la-pencil"></i></a>
+																	</div>
+																</div>
+																<div class="ash-color">
+																	<span class="ld">Akshya Nagar 1st Block 1st Cross,</span>
+																	<span class="ld">Rammurthy nagar,</span>
+																	<span class="ld">Bangalore-560016.</span>
+																</div>
+																<a href="javascript:void(0);" class="button sm-btn mt-3 nxt-btn v1">Deliver Here</a>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="col-md-6">
+													<div class="with-card">
+														<div class="normal-cards">
+															<div>
+																<div class="d-flex justify-content-between">
+																	<h6>Home</h6>
+																	<div>
+																		<a href="javascript:void(0)" title="Edit" class="circle-icon type2 mr-1" style="width: 24px; height: 24px; font-size: 14px;"><i class="las la-pencil"></i></a>
+																	</div>
+																</div>
+																<div class="ash-color">
+																	<span class="ld">Akshya Nagar 1st Block 1st Cross,</span>
+																	<span class="ld">Rammurthy nagar,</span>
+																	<span class="ld">Bangalore-560016.</span>
+																</div>
+																<a href="javascript:void(0);" class="button sm-btn mt-3 nxt-btn v1">Deliver Here</a>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="col-md-6">
+													<div class="with-card">
+														<div class="normal-cards">
+															<div>
+																<div class="d-flex justify-content-between">
+																	<h6>Home</h6>
+																	<div>
+																		<a href="javascript:void(0)" title="Edit" class="circle-icon type2 mr-1" style="width: 24px; height: 24px; font-size: 14px;"><i class="las la-pencil"></i></a>
+																	</div>
+																</div>
+																<div class="ash-color">
+																	<span class="ld">Akshya Nagar 1st Block 1st Cross,</span>
+																	<span class="ld">Rammurthy nagar,</span>
+																	<span class="ld">Bangalore-560016.</span>
+																</div>
+																<a href="javascript:void(0);" class="button sm-btn mt-3 nxt-btn v1">Deliver Here</a>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="col-md-6">
+													<div class=" add-adrs-btn with-card h-100">
+														<div class="normal-cards d-flex primary">
+															<span class="mr-2"><i class="fa fa-plus" aria-hidden="true"></i></span>
+															<h6 class="mb-0">Add Address</h6>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!-- <a href="javascript:void(0);" class="button nxt-btn mb tb">Proceed</a> -->
+										</div>
+									</div>
+									<div class="accord-blk mb-0">
+										<div class="accord-btn">
+											<h5 class="mr-2 mb-2 v1">Payment</h5>
+										</div>
+										<div class="accord-content pt-0">
+											<form>
+												<div class="checkboxradio">
+												    <input type="radio" id="test15" name="radio-group" checked>
+												    <label for="test15">Credit & Debit Cards / Netbanking / UPI</label>
+												</div>
+												<!-- <div class="checkboxradio">
+												    <input type="radio" id="test16" name="radio-group" checked>
+												    <label for="test16">Cash on delivery</label>
+												</div> -->
+											</form>
+											<a href="javascript:void(0);" class="button mb tb">Place Order</a>
+										</div>
+									</div>
+								</div>
+								<form>
+									<div class="bg-layer"></div>
+									<div class="adrs-form ">
+										<div class="text-right">
+											<a href="javascript:void(0);" class="add-adrs-close mb-4"><i class="las la-times"></i></a>
+										</div>
+										<div class="adrs-form-content ml-auto">
+											<h5 class="v1 mb-30">Shipping Address</h5>
+											<div class="floating-blk">
+							                  <label for="name" class="floating-row">
+							                    <span class="floating-label">First Name</span>
+							                    <input class="floating-input" type="text" id="name" />
+					                    		<p class="floating-input-error">Error message</p>
+							                  </label>
+							                </div>
+							                <div class="floating-blk">
+							                  <label for="name1" class="floating-row">
+							                    <span class="floating-label">Last Name</span>
+							                    <input class="floating-input" type="text" id="name1" />
+					                    		<p class="floating-input-error">Error message</p>
+							                  </label>
+							                </div>
+							                <div class="floating-blk">
+							                  <label for="name2" class="floating-row">
+							                    <span class="floating-label">Email</span>
+							                    <input class="floating-input" type="Email" id="name2" />
+					                    		<p class="floating-input-error">Error message</p>
+							                  </label>
+							                </div>
+							                <div class="floating-blk">
+							                  <label for="name3" class="floating-row">
+							                    <span class="floating-label">Phone Number</span>
+							                    <input class="floating-input" type="number" id="name3" />
+							                  </label>
+							                </div>
+							                <div class="floating-blk err">
+							                  <label for="name4" class="floating-row">
+							                    <span class="floating-label">City</span>
+							                    <input class="floating-input" value="santhosh" type="text" id="name4" />
+					                    		<p class="floating-input-error">Error message</p>
+						                  </label>
+							                </div>
+							                <div class="floating-blk">
+								                <label for="select11" class="floating-row">
+								                    <span class="arrow-btn"><i class="las la-angle-down"></i></span>
+								                    <span class="floating-label">Click to select State</span>
+								                    <select id="select11" class="floating-input">
+								                      <option value="" hidden></option>
+								                      <option selected=selected>Tamil Nadu</option>
+								                      <option>Arunachal Pradesh</option>
+								                      <option>Goa</option>
+								                      <option>Haryana</option>
+								                    </select>
+								                </label>
+							                </div>
+							                <div class="floating-blk">
+							                  <label for="name5" class="floating-row">
+							                    <span class="floating-label">PIN Code</span>
+							                    <input class="floating-input" type="text" id="name5" />
+							                  </label>
+							                </div>
+							                <div class="floating-blk">
+								                <label for="select12" class="floating-row">
+								                    <span class="arrow-btn"><i class="las la-angle-down"></i></span>
+								                    <select id="select12" class="floating-input">
+								                      <option value="" hidden></option>
+								                      <option selected= selected>India</option>
+								                      <option>Arunachal Pradesh</option>
+								                      <option>Goa</option>
+								                      <option>Haryana</option>
+								                    </select>
+								                </label>
+							                </div>
+							                <div class="d-flex mb-4 ">
+								                <div class="checkboxradio mr-3 my-0">
+												    <input type="radio" id="test20" name="radio-group" checked>
+												    <label for="test20">Home</label>
+												</div>
+												<div class="checkboxradio mr-3 my-0">
+												    <input type="radio" id="test21" name="radio-group">
+												    <label for="test21">Office</label>
+												</div>
+												<div class="checkboxradio mr-3 my-0" id="other">
+												    <input type="radio" class="other" id="test22" name="radio-group">
+												    <label for="test22">Other</label>
+												</div>
+							                </div>
+							                <div class="floating-blk other-form-field">
+							                  <label for="name5" class="floating-row">
+							                    <span class="floating-label">Address Label</span>
+							                    <input class="floating-input" type="text" id="name5" />
+							                  </label>
+							                </div>
+											<a href="javascript:void(0);" class="button mb add-adrs-close">Save</a>
+											<!-- <a href="javascript:void(0);" class="button mb add-adrs-check">Check</a> -->
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+						<div class="col-xl-4 d-none d-xl-block">  <!-- 4 -->
+							<div class="cart-blk ml-auto">
+								<div class="mb-40">
+									<h5 class="v1 mr-3 mb-30">Order Details</h5>
+									<div>
+										<div class="cart-row">
+											<div class="d-flex align-items-start justify-content-between">
+												<div class="d-flex align-items-start"> 
+													<div class="sm-icon"><img src="images/111.png"></div>
+													<div class="px-3">
+														<span class="md mb-2">Crystal Asofoetida</span>
+														<span class="md mb-1">Rs. 3,000</span>
+														<span class="sm mb-3 d-inline-block">(250 gms)</span>
+														<div class="count">
+															<span class="minus box">-</span>
+															<input class="box" type="text" name="" value="1" readonly="">
+															<span class="plus box active">+</span>
+														</div>
+													</div>
+												</div>
+												<a href="javascript:void(0);" class="trash-icon"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
+											</div>
+										</div>
+										<div class="cart-row">
+											<div class="d-flex align-items-start justify-content-between">
+												<div class="d-flex align-items-start"> 
+													<div class="sm-icon"><img src="images/111.png"></div>
+													<div class="px-3">
+														<span class="md mb-2">Crystal Asofoetida</span>
+														<span class="md mb-1">Rs. 3,000</span>
+														<span class="sm mb-3 d-inline-block">(250 gms)</span>
+														<div class="count">
+															<span class="minus box">-</span>
+															<input class="box" type="text" name="" value="1" readonly="">
+															<span class="plus box active">+</span>
+														</div>
+													</div>
+												</div>
+												<a href="javascript:void(0);" class="trash-icon"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- apply coppen start -->
+								<div class="position-relative">
+									<a href="javascript:void(0)" class="button tb mb apply-coupon mb-50">Apply Coupon</a>
+									<div class="success-msg d-flex align-items-center justify-content-between">
+										<div>
+											<span class="lg b-font">#33GewW</span>
+											<span class="md m-font mt-1 green">Offer applied on the bill</span>
+										</div>
+										<a href="javascript:void(0);" class="link-anim md code-remove">Remove</a>
+									</div>
+								</div>
+								<!-- apply coppen end -->
+
+								<table class="cart-table with-check mb-30">
+									<tbody>
+										<tr>
+											<td>
+												<span class="md">Price tag</span>
+											</td>
+											<td>
+												<span class="md">Rs. 3,000</span>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<span class="md">Shipping</span>
+											</td>
+											<td>
+												<span class="md">Free!</span>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<span class="md">Discount</span>
+											</td>
+											<td>
+												<span class="md">-0</span>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<span class="b-font md">Total</span>
+											</td>
+											<td>
+												<span class="b-font md">Rs. 3,000</span>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+
+								<!-- slide coupon start -->
+								<div class="coupon-detail-blk">
+									<div class="text-right mb-50">
+										<a href="javascript:void(0);" class="coupon-close-btn"><i class="las la-times"></i></a>
+									</div>
+									<form>
+										<div class="position-relative mb-40">
+											<div class="search-blk voucher-code">
+												<input class="search-box w-100" type="text" id="name" placeholder="Enter coupon code">
+												<a href="javascript:void(0);" class="search-btn button coupon-apply">Apply</a>
+											</div>
+										</div>
+									</form>
+									<div class="cart-row">
+										<div class="offer-label type1 mb-3">
+											<span>#33GewW</span>
+										</div>
+										<div>
+											<span class="md b-font mb-2">Get 5% off</span>
+											<span class="md ash-color b-font mb-2" style="font-size: 11px;">Use code #33GewW & get 5% off for purchase upto Rs.4999 for every Rs.100.</span>
+											
+										</div>
+										<a href="javascript:void(0)" class="button sm-btn coupon-apply" style="max-width: initial;min-width: 100px">Apply</a>
+									</div>
+									<div class="cart-row">
+										<div class="disable-row">
+											<div class="offer-label type1 mb-3">
+												<span>#4454Rewq</span>
+											</div>
+											<div>
+												<span class="md b-font mb-2">Get 10% off</span>
+												<span class="md ash-color b-font mb-2" style="font-size: 11px;">Use code #4454Rewq & get 10% off for purchase above Rs.5000 for every Rs.100.</span>
+												
+											</div>
+											<a href="javascript:void(0)" class="button sm-btn coupon-apply" style="max-width: initial;min-width: 100px">Apply</a>
+										</div>
+									</div>
+								</div>
+								<!-- slide coupon end -->
+							</div> <!-- add col-lg-5 -->
+						</div>
+					</div>
+					<!-- section start -->
+					<div style="border-top: 1px solid #F8F2F2; padding-top: 56px;">
+						<section>
+							<div>
+								<h5>recently viewed</h5>
+								<div class="row cardsection mb-20 mb-md-0">
+									<a href="javascript:void(0);"class="col-6 col-lg-3">
+										<div class="cards-blk">
+										 	<div class="cardsimg mb-4">
+										 		<img src="images/r5.png">
+										 	</div>
+										 	<div>
+											 	<h6>303 Compounded Asafoetida</h6>
+											 	<p class="ash-color">A specially crafted asafoetida especially for hotel and corporate kitchens.</p>
+										 		<p class="amnt">₹1,500.00</p>
+										 	</div>
+										</div>
+									</a>
+									<a href="javascript:void(0);"class="col-6 col-lg-3">
+										<div class="cards-blk">
+										 	<div class="cardsimg mb-4">
+										 		<img src="images/r5.png">
+										 	</div>
+										 	<div>
+											 	<h6>303 Compounded Asafoetida</h6>
+											 	<p class="ash-color">A specially crafted asafoetida especially for hotel and corporate kitchens.</p>
+										 		<p class="amnt">₹1,500.00</p>
+										 	</div>
+										</div>
+									</a>
+									<a href="javascript:void(0);"class="col-6 col-lg-3">
+										<div class="cards-blk">
+										 	<div class="cardsimg mb-4">
+										 		<img src="images/r5.png">
+										 	</div>
+										 	<div>
+											 	<h6>303 Compounded Asafoetida</h6>
+											 	<p class="ash-color">A specially crafted asafoetida especially for hotel and corporate kitchens.</p>
+										 		<p class="amnt">₹1,500.00</p>
+										 	</div>
+										</div>
+									</a>
+									<a href="javascript:void(0);"class="col-6 col-lg-3">
+										<div class="cards-blk">
+										 	<div class="cardsimg mb-4">
+										 		<img src="images/r5.png">
+										 	</div>
+										 	<div>
+											 	<h6>303 Compounded Asafoetida</h6>
+											 	<p class="ash-color">A specially crafted asafoetida especially for hotel and corporate kitchens.</p>
+										 		<p class="amnt">₹1,500.00</p>
+										 	</div>
+										</div>
+									</a>
+								</div>
+							</div>
+						</section>
+					</div>
+					<!-- section end -->
+
+					<!-- popup massege start -->
+					<!-- <div class="popup-card py-3 d-block d-xl-none">
+						<div class="container">
+							<div class="d-flex justify-content-between align-items-center">
+								<span class="ld">1 item | <span>&#8377</span>720</span>
+								<a href="javascript:void(0);" class="button mb open-btn">Order detail</a>
+							</div>
+						</div>
+					</div> -->
+					<!-- popup massege end -->
+				</div>
+			</div>
+			<!-- footer start -->
+			<footer class="py-80 mb-20">
+				<div class="container">
+						<div class="row mb-5">
+							<div class="col-12 col-lg-6">
+								<div class="row mb-40 mb-lg-0">
+									<div class="col-6 mb-3 mb-md-0">
+										<ul class="footer-lists">
+											<li><a href="javascript:void(0);" class="link-anim">About</a></li>
+											<li><a href="javascript:void(0);" class="link-anim">Home Use</a></li>
+											<li><a href="javascript:void(0);" class="link-anim">Hotel Use</a></li>
+											<li><a href="javascript:void(0);" class="link-anim">International</a></li>
+											<li><a href="javascript:void(0);" class="link-anim">Recipe</a></li>
+											<li><a href="javascript:void(0);" class="link-anim">Health Benefits</a></li>
+										</ul>
+										<div class="fssai-logo mt-5">
+											<img src="images/fssai.svg">
+											<span>12345678901234</span>
+										</div>
+									</div>
+									<div class="col-6 mb-3 mb-md-0">     
+										<ul class="footer-lists">
+											<li><a href="javascript:void(0);" class="link-anim">Contact</a></li>
+											<li><a href="javascript:void(0);" class="link-anim">FAQs</a></li>
+											<li><a href="javascript:void(0);" class="link-anim">Returns Policy</a></li>
+											<li><a href="javascript:void(0);" class="link-anim">Cookie Policy</a></li>
+											<li><a href="javascript:void(0);" class="link-anim">Privacy Policy</a></li>
+											<li><a href="javascript:void(0);" class="link-anim">Terms and Conditions</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-6 col-xl-5 offset-xl-1">
+								<form class="w-100">
+									  <div class="search-blk">
+										<input class="search-box w-100" type="text" id="name" placeholder="Subscribe to our newsletter" />
+										<a href="javascript:void(0);" class="search-btn button">Subscribe</a>
+									  </div>
+									  <div class="err-msg">
+										<p>Lorem Ipsum Error message.</p>
+									   </div>
+									   <div class="s-msg">
+										<p>Lorem Ipsum Error message.</p>
+									   </div>
+								</form>
+							</div>
+						</div>
+						<!-- <div class="fssai-logo mb-60">
+							<img src="images/fssai.svg">
+							<span>12345678901234</span>
+						</div> -->
+						<div class=" footer-bottom d-lg-flex align-items-center justify-content-between text-center text-lg-left ">
+							<p>© 2019-23 SS Pandian & Sons. All rights reserved / Powered by <a href="javascript:void(0);" class="link-anim primary">Made By Fire</a></p>
+							<div class="d-flex f-icon px-4 py-4 py-lg-0 justify-content-center">
+								<img src="images/ficon.png">
+								<img src="images/ficon1.png">
+								<img src="images/rpay.svg">
+							</div>
+							<ul class="social-icons d-flex justify-content-center">
+								<li ><a href="javascript:void(0);"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+								<li><a href="javascript:void(0);"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</footer>
+			<!-- footer end -->
+		</div>	
+	  	<script>
+		  	var jsArr = ['js/app.js'];
+			for(var j = 0; j < jsArr.length; j++) {
+		        var script = document.createElement('script')
+		        script.setAttribute('type', 'text/javascript')
+		        script.setAttribute('src', jsArr[j])
+		        document.getElementsByTagName('head')[0].appendChild(script)
+		    }
+	    </script>
+	</body>
+</html>

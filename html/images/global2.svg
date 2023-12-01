@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="37.806" height="42.937" viewBox="0 0 37.806 42.937">
+  <g id="Global_shipping_icon" data-name="Global shipping icon" transform="translate(-1194 -60.799)">
+    <g id="Icon_feather-globe" data-name="Icon feather-globe" transform="translate(1192 70)">
+      <path id="Path_81" data-name="Path 81" d="M31.1,17.868c0,8.212-6.291,14.868-14.051,14.868S3,26.08,3,17.868,9.291,3,17.051,3,31.1,9.657,31.1,17.868Z" transform="translate(0 0)" fill="none" stroke="#fff2f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Path_82" data-name="Path 82" d="M3,18H31.1" transform="translate(0 -0.132)" fill="none" stroke="#fff2f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Path_83" data-name="Path 83" d="M18.809,3a21.293,21.293,0,0,1,6.809,14.868,21.293,21.293,0,0,1-6.809,14.868A21.293,21.293,0,0,1,12,17.868,21.293,21.293,0,0,1,18.809,3Z" transform="translate(-1.759)" fill="none" stroke="#fff2f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Path_84" data-name="Path 84" d="M-.4-1.471S5.3-4.751,11.3-4.751s12.313,3.28,12.313,3.28" transform="translate(5.542 27.193)" fill="none" stroke="#fff2f2" stroke-width="2"/>
+      <path id="Path_85" data-name="Path 85" d="M0,3.28S5.7,0,11.707,0,24.02,3.28,24.02,3.28" transform="translate(29.157 13.848) rotate(180)" fill="none" stroke="#fff2f2" stroke-width="2"/>
+    </g>
+    <g id="Icon_material-flight" data-name="Icon material-flight" transform="matrix(0.309, 0.951, -0.951, 0.309, 1227.156, 60.799)">
+      <path id="Path_86" data-name="Path 86" d="M0,0" transform="translate(6.478 4.541)" fill="#fff2f2"/>
+      <path id="Path_87" data-name="Path 87" d="M15.047,9.082v-1.3L8.711,4.541V.973A1.1,1.1,0,0,0,7.523,0,1.1,1.1,0,0,0,6.336.973V4.541L0,7.785v1.3L6.336,7.461v3.568L4.752,12v.973l2.772-.649,2.772.649V12l-1.584-.973V7.461Z" transform="translate(0 0)" fill="#fff2f2"/>
+    </g>
+  </g>
+</svg>

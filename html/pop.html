@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="user-scalable=no,initial-scale=1,maximum-scale=1.0" />
+    <!-- <link rel="shortcut icon"href="img/nl-favicon.png"/> -->
+    <title>SSP</title>
+    <!-- modernizr included -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <style>
+        body {
+            background-color: #fff;
+        }
+
+        .render-blk {
+            opacity: 0;
+        }
+    </style>
+    <script>
+        var cssArr = ['css/app.css'];
+        for (var i = 0; i < cssArr.length; i++) {
+            var link = document.createElement('link');
+            link.setAttribute('rel', 'stylesheet');
+            link.setAttribute('type', 'text/css');
+            link.setAttribute('href', cssArr[i]);
+            document.getElementsByTagName('head')[0].appendChild(link);
+        }
+    </script>
+    <noscript>
+        <style media="screen">
+            .render-blk {
+                opacity: 1;
+            }
+        </style>
+    </noscript>
+</head>
+
+<body class="pop-generic">
+    <div class="render-blk">
+        <div class="container">
+            <div class="pop-blk d-flex justify-content-center align-items-center">
+                <div class="pop-card">
+                    <div class="d-flex justify-content-between pb-2">
+                        <div>
+                            <h3 class="mb-0">Kumaran.S.S</h3>
+                            <span class="md ash-color b-font" style="font-size: 11px;">FOUNDER . DIRECTOR</span>
+                        </div>
+                        <a href="javascript:void(0)" class="out-icon"><i class="las la-upload"></i></a>
+                    </div>
+                    <div>
+                        <div class="mb-3"></div>
+                        <ul class="card-list pt-3">
+                            <li>
+                                <a href="javascriptvoid:(0)" class="d-flex">
+                                    <span><i class="fa fa-at" aria-hidden="true"></i></span>
+                                    <span>sspandsons@gmail.com</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascriptvoid:(0)" class="d-flex">
+                                    <span> <i class="fa fa-phone" aria-hidden="true"></i></span>
+                                    <span>+919839058880</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascriptvoid:(0)" class="d-flex">
+                                    <span><i class="fa fa-map-marker" aria-hidden="true"></i> </span>
+                                    <div>
+                                        <p>#148, 3rd Main Road, <br class="d-md-none">Industrial Town,</p>
+                                        <p>Rajajinagar, <br class="d-md-none">Bengaluru – 560 010,</p>
+                                        <p>India.</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascriptvoid:(0)" class="d-flex">
+                                    <span><i class="fa fa-globe" aria-hidden="true"></i></span>
+                                    <span>sspandian.com</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <a href="javascript:void(0);" class="button">Save To Contacts</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="popup-layer">
+                <div class="share-pop d-flex justify-content-center align-items-center">
+                    <div class="dup-layer"></div>
+                    <div class="pop-card mx-4 align-items-center">
+                        <div class="text-right mb-4">
+                            <a href="javascript:void(0)" class="popup-card-close"><i class="las la-times"></i></a>
+                        </div>
+                        <div class="share-list">
+                            <div>
+                                <a href="javascriptvoid:(0)" class="social-share">
+                                    <div>
+                                        <img class="social_icon" src="images/s2.svg" alt="">
+                                        <span>Share on Facebook</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="javascriptvoid:(0)" class="social-share">
+                                    <div>
+                                        <img class="social_icon" src="images/s3.png" alt="">
+                                        <span>Share on Linkedin</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="javascriptvoid:(0)" class="social-share">
+                                    <div>
+                                        <img class="social_icon" src="images/s4.jpeg" alt="">
+                                        <span>Share on Twitter</span>
+                                    </div>
+
+                                </a>
+                            </div>
+                            <div>
+                                <a href="javascriptvoid:(0)" class="social-share">
+                                    <div>
+                                        <img class="social_icon" src="images/s5.svg" alt="">
+                                        <span>Share on Whatsapp</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="javascriptvoid:(0)" class="social-share">
+                                    <div>
+                                        <img class="social_icon" src="images/s7.png" alt="">
+                                        <span>Share via Mail</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="copy-link my-4 d-flex justify-content-between">
+                            <div>
+                                <span>sspandian.com/kumaran</span>
+                            </div>
+                            <span>copy</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var jsArr = ['js/app.js'];
+        for (var j = 0; j < jsArr.length; j++) {
+            var script = document.createElement('script')
+            script.setAttribute('type', 'text/javascript')
+            script.setAttribute('src', jsArr[j])
+            document.getElementsByTagName('head')[0].appendChild(script)
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25">
+  <g id="Flight_NA_icon" data-name="Flight NA icon" transform="translate(-728 -646)">
+    <g id="Icon_material-flight" data-name="Icon material-flight" transform="translate(751.327 648.689) rotate(90)">
+      <path id="Path_86" data-name="Path 86" d="M0,0" transform="translate(8.356 6.919)" fill="#dd5353"/>
+      <path id="Path_87" data-name="Path 87" d="M19.409,13.838V11.861L11.237,6.919V1.483a1.533,1.533,0,0,0-3.065,0V6.919L0,11.861v1.977l8.172-2.471V16.8L6.129,18.286v1.483L9.7,18.78l3.575.988V18.286L11.237,16.8V11.367Z" transform="translate(0)" fill="#dd5353"/>
+    </g>
+    <g id="Ellipse_44" data-name="Ellipse 44" transform="translate(728 646)" fill="none" stroke="#dd5353" stroke-width="2">
+      <circle cx="12.5" cy="12.5" r="12.5" stroke="none"/>
+      <circle cx="12.5" cy="12.5" r="11.5" fill="none"/>
+    </g>
+    <line id="Line_23" data-name="Line 23" x1="14" y2="20" transform="translate(733.5 648.5)" fill="none" stroke="#000" stroke-width="2"/>
+  </g>
+</svg>

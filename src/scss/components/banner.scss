@@ -1,0 +1,181 @@
+
+.banner{
+	&-blk{
+		font-size: 24px;
+		line-height: 34px;
+		font-family: $rfont;
+		.img-blk{
+			position: relative;
+			z-index: 1;
+			background: url('/html/images/bg-3.png');
+			background-size: contain;
+			background-repeat: no-repeat;
+			background-position: left center;
+			.img-con{
+				color: #ffffffa3;
+				font-family: $black-font;
+				font-size: 50px;
+				line-height: 54px;
+				letter-spacing: 0px;
+				padding-bottom: 0;
+			}
+			.row{
+				margin-left: -5%;
+				padding-top: 141px;
+				padding-bottom: 62px;
+				margin-right: -15px;
+				[class*=col-]{
+					padding-left: 15px;
+					padding-right: 15px;
+				}
+			}
+		}
+		&.v1{
+			.img-blk{
+				max-width: 470px; /*380px*/
+				width: 100%;
+				background:none;
+			}
+		}
+		&.v2{
+			padding-bottom: 20px;
+			.banner-blk-img{
+				position: relative;
+				padding-top: 100px;
+			}
+		}
+	}
+}
+
+.veg-bg{
+	background: url("/html/images/veg.png") no-repeat center;
+	background-size: cover;
+}
+/*new 2.0*/
+.img-blk1{
+	position: absolute;
+	right: 0;
+	bottom: -20px; /*0*/
+	top: 0;
+	img{
+		height: 100%;
+		object-fit: contain;
+		object-position: bottom;
+	}
+}
+/*new 2.0*/
+
+.abs-img{
+	position: absolute;
+	z-index: 1;
+	bottom: 30px;
+	right: 10px;
+}
+
+
+/*new banner in detail page start*/
+	.new-banner-blk{
+		color: $light-pink;
+		/*font-family: $mfont;*/
+		font-size: 18px;
+		line-height: 30px;
+		background-color: #404465;
+		padding-top: 50px;
+		padding-bottom: 16px;
+		.button	{
+			color: #FEDAD6;
+			font-family: $osbfont;
+			border-radius: 6px;
+			font-size: 22px;
+			line-height: 30px;
+		}
+	}
+	
+
+/*new banner in detail page start*/
+
+@media screen and (min-width: 1024px) {
+	.new-banner-blk{
+		.row{
+			margin-left: -70px;
+		}
+	}
+}
+/*new 2.1*/
+@media screen and (min-width: 1201px) {
+	.banner-blk.v2{
+		/*.banner-blk-img{
+			max-width: 800px;
+			flex: 0 0 800px;
+		}*/  
+		.banner-blk-content{
+			max-width: 500px;
+		}
+	}
+}
+/*new 2.1*/
+@media screen and (min-width: 1600px) {
+	/*new banner patterns start*/
+
+	.new-banner-blk{
+		.row{
+			margin-left: -90px;
+		}
+	}
+
+	/*new banner patterns end*/
+}
+@media screen and (max-width: 1280px) {
+	.banner-blk{
+		.img-blk{
+			.img-con{
+				font-size: 34px;
+				line-height: 40px;
+			}
+		}
+	}
+}
+@media screen and (max-width: 1200px) {
+	.banner-blk{
+		font-size: 16px;
+		line-height: 24px;
+		/*new*/
+		h1{
+			font-size: 32px;
+			line-height: 40px;
+			margin-bottom: 15px;
+			span{
+				font-size: 32px;
+				line-height: 40px;
+			}
+		}
+		/*&.v1{
+			.img-blk{
+				max-width: 200px;
+				margin: auto;
+			}
+		}*/	
+	}
+}
+@media screen and (max-width: 539px) {
+	.banner-blk{
+		.img-blk{
+			.img-con{
+				font-size: 24px;
+				line-height: 30px;
+			}
+		}
+	}
+	.new-banner-blk{
+		.button{
+			font-size: 17px;
+			padding: 15px 15px;
+		}
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.banner-blk.v2 .banner-blk-img{
+		padding-top: 50px;
+	}
+}

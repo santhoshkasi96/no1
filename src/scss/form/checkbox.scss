@@ -1,0 +1,129 @@
+.checkbox-animate{
+	margin-bottom: 20px;
+	margin-top: 20px;
+	label{
+		position: relative;
+		display: flex ;
+		align-items: center;
+		cursor: pointer;
+		/*color: $primary;*/
+		font-family: $mfont;
+		font-size: 14px;
+		line-height: 24px;
+		input{
+			position: absolute;
+			opacity: 0;
+			&:checked{
+				& ~ .tick-anim{
+					border-color: $primary;
+					background-color: $primary;
+					&:before{
+						transform: scale(1) rotate(-45deg);
+					}
+				}
+			}
+		}
+		.tick-anim{
+			display: inline-block;
+			border: 1px solid $black;
+			width: 22px;
+			height: 22px;
+			flex: 0 0 22px;
+			max-width: 22px;
+			position: relative;
+			margin-right: 5px;
+			border-radius: 2px;
+			transition: all 0.5s;
+			background-color: $white;
+			margin-right: 8px;
+			&:before{
+				content: "";
+			    position: absolute;
+			    display: inline-block;
+			    width: 11px;
+			    height: 6px;
+			    border-bottom: 2px solid $white;
+			    border-left: 2px solid $white;
+			    left: 4px;
+			    top: 5px;
+			    transform: scale(0) rotate(-45deg);
+			    transition: 0.5s;
+			}
+
+		}
+	}
+	&.regular{
+		label{
+			font-size: 16px;
+			font-family: $rfont;
+		}
+	}
+	
+}
+
+
+/*.radio buttons start*/
+.checkboxradio{
+	margin-bottom: 20px;
+    margin-top: 20px;
+	[type="radio"]{
+		&:checked,&:not(:checked){
+			position: absolute;
+	    	left: -9999px;
+	    	& + label{
+	    		position: relative;
+			    padding-left: 28px;
+			    cursor: pointer;
+			    display: inline-block;
+			    font-family: $mfont;
+			    font-size: 14px;
+			    line-height: 22px; /*24px*/
+			    &:before{
+			    	content: '';
+				    position: absolute;
+				    left: 0;
+				    top: 0;
+				    width: 20px;
+				    height: 20px;
+				    border: 1px solid $secondary;
+				    border-radius: 20px;
+				    background: $white;
+			    }
+			    &:after{
+			    	content: '';
+				    width: 12px;
+				    height: 12px;
+				    background: $primary;
+				    position: absolute;
+				    top: 4px;
+				    left: 4px;
+				    border-radius: 100%;
+				    @include transition(all 0.2s ease);
+			    }
+	    	}
+		}
+	}
+	&.no-radio{
+		label:before{
+			opacity: 0;
+		}
+		[type="radio"]:checked + label{
+			&:after{
+				opacity: 0 !important;
+			}
+		}
+	}
+}
+label p{
+	padding-bottom: 0 !important;
+}
+[type="radio"]:not(:checked) + label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+[type="radio"]:checked + label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
